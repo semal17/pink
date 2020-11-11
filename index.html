@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PINK</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__inner-logo">
+            <picture class="logo__img">
+              <source
+                srcset="images/logo-white-mobile.svg"
+                media="(max-width: 660px)"
+              />
+              <source
+                srcset="images/logo-white-tablet.svg"
+                media="(max-width: 1200px)"
+              />
+              <img
+                class="header__inner-img"
+                src="images/logo.svg"
+                alt="Логотип PINK"
+              />
+            </picture>
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line"></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link menu__list-link--active" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Фотографии</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Конкурс</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <div class="top__down">
+            <h1 class="top__title">Взгляните на жизнь иначе!</h1>
+            <button class="top__btn">Скачать приложение</button>
+            <ul class="top__list">
+              <li class="top__list-item">
+                <a class="top__list-link" href="#">
+                  <img
+                    src="images/apple-logo.svg"
+                    height="56px"
+                    width="47px"
+                    alt="Логотип Apple"
+                /></a>
+              </li>
+              <li class="top__list-item">
+                <a class="top__list-link" href="#">
+                  <img
+                    src="images/android-logo.svg"
+                    height="47px"
+                    width="43px"
+                    alt="Логотип Android"
+                /></a>
+              </li>
+              <li class="top__list-item">
+                <a class="top__list-link" href="#">
+                  <img
+                    src="images/microsoft-logo.svg"
+                    height="41px"
+                    width="44px"
+                    alt="Логотип Microsoft"
+                /></a>
+              </li>
+            </ul>
+            <p class="top__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container">
+        <h2 class="offer__title">Устали от серости мегаполиса?</h2>
+        <p class="offer__title-text">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="offer__wrapper">
+        <div class="container">
+          <div class="offer__mobile">
+            <div class="offer__mobile-item">
+              <picture class="offer__mobile-img">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/iphone-screen-1-desktop@1x.webp 1x,
+                    images/iphone-screen-1-desktop@2x.webp 2x,
+                    images/iphone-screen-1-desktop@3x.webp 3x
+                  "
+                />
+                <img
+                  src="images/iphone-screen-1-desktop@1x.png"
+                  srcset="
+                    images/iphone-screen-1-desktop@2x.png 2x,
+                    images/iphone-screen-1-desktop@3x.png 3x
+                  "
+                  alt="Изображение серого экрана"
+                />
+              </picture>
+              <h3 class="offer__mobile-title">Поднимает настроение</h3>
+              <p class="offer__mobile-text">
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </div>
+            <div class="offer__mobile-item">
+              <picture class="offer__mobile-img">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/iphone-screen-2-desktop@1x.webp 1x,
+                    images/iphone-screen-2-desktop@2x.webp 2x,
+                    images/iphone-screen-2-desktop@3x.webp 3x
+                  "
+                />
+                <img
+                  src="images/iphone-screen-2-desktop@1x.png"
+                  srcset="
+                    images/iphone-screen-2-desktop@2x.png 2x,
+                    images/iphone-screen-2-desktop@3x.png 3x
+                  "
+                  alt="Изображение красного экрана"
+                />
+              </picture>
+              <h3 class="offer__mobile-title">Меняет мир вокруг</h3>
+              <p class="offer__mobile-text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </div>
+            <div class="offer__mobile-item">
+              <picture class="offer__mobile-img">
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/iphone-screen-3-desktop@1x.webp 1x,
+                    images/iphone-screen-3-desktop@2x.webp 2x,
+                    images/iphone-screen-3-desktop@3x.webp 3x
+                  "
+                />
+                <img
+                  src="images/iphone-screen-3-desktop@1x.png"
+                  srcset="
+                    images/iphone-screen-3-desktop@2x.png 2x,
+                    images/iphone-screen-3-desktop@3x.png 3x
+                  "
+                  alt="Изображение красного экрана со смайликом"
+                />
+              </picture>
+              <h3 class="offer__mobile-title">Заводит новых друзей</h3>
+              <p class="offer__mobile-text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </div>
+          </div>
+
+          <div class="offer__effect">
+            <div class="offer__effect-timer">
+              <img src="images/diagram-fill.png" alt="Изображеине таймера" />
+            </div>
+            <div class="offer__effect-wrapper">
+              <h3 class="offer__effect-title">Эффект на 24 часа!</h3>
+              <p class="offer__effect-text">
+                Британские ученые провели исследование и доказали, что
+                положительный эффект от использования приложения длится целые
+                сутки!
+              </p>
+              <a class="offer__effect-more" href="#"
+                >Узнать больше об исследовании</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comment">
+      <div class="container">
+        <img class="comment__img" src="images/quotes.svg" alt="Кавычки" />
+        <input
+          class="comment__input"
+          type="radio"
+          id="comment__slide1"
+          name="comment"
+          checked
+        />
+        <input
+          class="comment__input"
+          type="radio"
+          id="comment__slide2"
+          name="comment"
+        />
+        <input
+          class="comment__input"
+          type="radio"
+          id="comment__slide3"
+          name="comment"
+        />
+        <div class="comment__box">
+          <div class="comment__inner">
+            <h4 class="comment__inner-author--up">Николай Петров</h4>
+            <p class="comment__inner-text">
+              "Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей
+              будущей женой в комментариях к выложенной фотографии!"
+            </p>
+            <h4 class="comment__inner-author">Николай Петров</h4>
+            <p class="comment__inner-about">25 лет, водитель трамвая</p>
+          </div>
+
+          <div class="comment__inner">
+            <h4 class="comment__inner-author--up">Николай Петров</h4>
+            <p class="comment__inner-text">
+              "Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей
+              будущей женой в комментариях к выложенной фотографии!"
+            </p>
+            <h4 class="comment__inner-author">Николай Петров</h4>
+            <p class="comment__inner-about">25 лет, водитель трамвая</p>
+          </div>
+
+          <div class="comment__inner">
+            <h4 class="comment__inner-author--up">Николай Петров</h4>
+            <p class="comment__inner-text">
+              "Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей
+              будущей женой в комментариях к выложенной фотографии!"
+            </p>
+            <h4 class="comment__inner-author">Николай Петров</h4>
+            <p class="comment__inner-about">25 лет, водитель трамвая</p>
+          </div>
+        </div>
+        <div class="comment__controls">
+          <label class="comment__control" for="comment__slide1"></label>
+          <label class="comment__control" for="comment__slide2"></label>
+          <label class="comment__control" for="comment__slide3"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="container">
+        <input
+          class="price__input"
+          type="radio"
+          name="price"
+          id="price__slide1"
+        />
+        <input
+          class="price__input"
+          type="radio"
+          name="price"
+          id="price__slide2"
+          checked
+        />
+        <input
+          class="price__input"
+          type="radio"
+          name="price"
+          id="price__slide3"
+        />
+        <div class="price__inner">
+          <table class="price__table">
+            <tr class="price__table-list">
+              <td class="price__table-item price__table-item-none"></td>
+              <td class="price__table-item price__table-item-top">
+                <h4 class="price__table-title">База</h4>
+                <p class="price__table-text">1,99 USD</p>
+              </td>
+              <td class="price__table-item price__table-item-top">
+                <span class="price__table-hit"></span>
+                <h4 class="price__table-title">Стандарт</h4>
+                <p class="price__table-text">3,99 USD</p>
+              </td>
+              <td class="price__table-item price__table-item-top">
+                <h4 class="price__table-title">Анлим</h4>
+                <p class="price__table-text">9,99 USD</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__table-item price__table-name">
+                Розовый фильтр
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Розовый фильтр</span>
+                <img class="price__table-img" src="images/yes.svg" alt="да" />
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Розовый фильтр</span>
+                <img class="price__table-img" src="images/yes.svg" alt="да" />
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Розовый фильтр</span>
+                <img class="price__table-img" src="images/yes.svg" alt="да" />
+              </td>
+            </tr>
+            <tr>
+              <td class="price__table-item price__table-name">Смайлики</td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Смайлики</span>
+                <img class="price__table-img" src="images/no.svg" alt="нет" />
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Смайлики</span>
+                <img class="price__table-img" src="images/yes.svg" alt="да" />
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Смайлики</span>
+                <img class="price__table-img" src="images/yes.svg" alt="да" />
+              </td>
+            </tr>
+            <tr>
+              <td class="price__table-item price__table-name">Комментарии</td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Комментарии</span>
+                <img class="price__table-img" src="images/no.svg" alt="нет" />
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Комментарии</span>
+                <img class="price__table-img" src="images/no.svg" alt="нет" />
+              </td>
+              <td class="price__table-item">
+                <span class="price__table-mobile">Комментарии</span>
+                <img class="price__table-img" src="images/yes.svg" alt="да" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="price__controls">
+          <label class="price__control" for="price__slide1"></label>
+          <label class="price__control" for="price__slide2"></label>
+          <label class="price__control" for="price__slide3"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="questions__contacts">
+          <div class="questions__contacts-item">
+            <h4 class="questions__contacts-title">Звоните:</h4>
+            <a class="questions__contacts-text" href="#">+7 (812) 555-66-66</a>
+          </div>
+
+          <div class="questions__contacts-item">
+            <h4 class="questions__contacts-title">Приезжайте в гости:</h4>
+            <a class="questions__contacts-text" href="#"
+              >ул. Большая Конюшенная, 19/8</a
+            >
+          </div>
+
+          <div class="questions__contacts-item">
+            <h4 class="questions__contacts-title">Пишите:</h4>
+            <a class="questions__contacts-text" href="#">mail@htmlacademy.ru</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe
+        class="map__inner"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6062165480919!2d30.323551654024424!3d59.93867617420508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604330991202!5m2!1sru!2sru"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+      >
+      </iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <img src="images/logo-blue-desktop.svg" alt="Синий логотип Pink" />
+
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-img"
+                    src="images/twitter.svg"
+                    alt="иконка twitter"
+                  />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-img"
+                    src="images/facebook.svg"
+                    alt="иконка facebook"
+                  />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-img"
+                    src="images/youtube.svg"
+                    alt="иконка youtube"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__made">
+            <h4 class="footer__made-title">Разработано</h4>
+            <a class="footer__made-link" href="#">
+              <svg
+                class="footer__made-img"
+                width="26.943"
+                height="34.09"
+                viewBox="0 0 26.943 34.09"
+              >
+                <path
+                  fill="none"
+                  d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/libs.min.js"></script>
+  </body>
+</html>

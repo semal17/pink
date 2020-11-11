@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="41" viewBox="0 0 22 41">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <image id="right-arrow.svg" class="cls-1" width="22" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAApCAYAAAAxmNlDAAABDElEQVRIia3XPY7DIBCG4XfRbpsb0G/pKkWaFNGWe+g0W/sOvsG2aSIikEb4JwN802BL6PFnBiT74/v88wv8A3/AA1GFjJ6AWx4lFXLShH8BFxUe8uvL8ZBHOR7MtRQP1b0Mr+GC34FlBN+CS80j+BFMhV+BuJqxU+9gi6eavLgH7sK9cDPeAjfhrbAb74ELPh/hvTA59S4+Am/hkwqu8Vjwz9W0fhy7JIrEFi8PiEo4mgYuKjiaxr3WXAGvUATNs6g9kUPN20UZSGxP2gqlM/FbtAd2oa2wG22Bm1Av3Izi2BUFtV9IrjpK3I3uJbZfPl0oG4klaA3LUAtL0QLL0QLL0VRpVyRU+58HPAE/Ol9D2gE/3wAAAABJRU5ErkJggg=="/>
+</svg>
