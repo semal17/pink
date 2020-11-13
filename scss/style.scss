@@ -1,0 +1,518 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header {
+  display: block;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  line-height: 18px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+  &__inner-logo {
+    overflow: hidden;
+    outline: none;
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+  &__inner-img {
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.menu {
+  &__list {
+    padding: 46px 0;
+  }
+  &__list-item {
+    display: inline-block;
+    & + .menu__list-item {
+      padding-left: 80px;
+    }
+  }
+  &__btn {
+    display: none;
+  }
+  &__list-link {
+    outline: none;
+    &:hover {
+      color: $red;
+    }
+    &:focus {
+      color: $red;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+  &__list-link--active {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: #fff;
+      bottom: -7px;
+      left: 0;
+    }
+  }
+}
+
+.top {
+  background-color: #2d3d4d;
+  background-image: url("../images/iphone-hand-desktop@1x.png"),
+    url("../images/background-fullsize.jpg");
+  @supports (
+    background: -webkit-image-set(url("../images/iphone-hand-desktop@1x.webp"), url("../images/background-fullsize.webp")
+          1x)
+  ) {
+    background-image: url("../images/iphone-hand-desktop@1x.webp"),
+      url("../images/background-fullsize.webp");
+  }
+  background-position: 75% bottom, center top;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  min-height: 853px;
+  padding-top: 300px;
+  margin: -114px auto;
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../images/iphone-hand-desktop@2x.png"),
+      url("../images/background-fullsize.jpg");
+    @supports (
+      background: -webkit-image-set(url("../images/iphone-hand-desktop@2x.webp"), url("../images/background-fullsize.webp")
+            2x)
+    ) {
+      background-image: url("../images/iphone-hand-desktop@2x.webp"),
+        url("../images/background-fullsize.webp");
+    }
+    background-size: auto 73%, cover;
+  }
+  &__inner {
+    padding-bottom: 50px;
+  }
+  &__down {
+    width: 310px;
+  }
+  &__title {
+    padding-top: 22px;
+    font-size: 50px;
+    line-height: 60px;
+    @extend %os-light;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+  }
+  &__btn {
+    margin: 62px 0 67px -5px;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    padding: 14px 29px;
+    border-radius: 30px;
+    width: 310px;
+    cursor: pointer;
+    outline: 0;
+    @extend %os-bold;
+    &:hover {
+      color: $red;
+      background-color: #fff;
+    }
+    &:active {
+      color: rgba(210, 40, 86, 0.302);
+    }
+    &:focus {
+      border-color: $red;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    margin: 0 auto;
+  }
+  &__text {
+    margin: 60px 0 46px;
+    font-size: 18px;
+    line-height: 24px;
+    @extend %os-light;
+    text-align: center;
+  }
+}
+
+.offer {
+  margin-top: 115px;
+  text-align: center;
+  &__wrapper {
+    background-color: $grey;
+    background-image: url("../images/triangle-white.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+  }
+  &__title {
+    @extend %os-light;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 auto;
+    padding-top: 81px;
+  }
+  &__title-text {
+    @extend %os-light;
+    font-size: 50px;
+    line-height: 60px;
+    width: 450px;
+    margin: 0 auto 75px;
+    color: $blue;
+    overflow: hidden;
+  }
+  &__mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    margin-bottom: 75px;
+  }
+  &__mobile-item {
+    width: 290px;
+  }
+  &__mobile-title {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 60px 0 30px;
+    @extend %os-bold;
+  }
+  &__mobile-text {
+    padding: 0 28px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__effect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 65px;
+  }
+  &__effect-wrapper {
+    text-align: left;
+    padding-left: 63px;
+  }
+  &__effect-title {
+    @extend %os-bold;
+    font-size: 32px;
+    line-height: 34px;
+  }
+  &__effect-text {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0 40px;
+  }
+  &__effect-more {
+    color: #d6436b;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: underline;
+  }
+}
+
+.comment {
+  padding: 72px 0 40px;
+  display: block;
+  &__img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 58px;
+  }
+  &__input {
+    display: none;
+  }
+  &__inner {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__inner-text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 700px;
+    margin: 0 auto;
+  }
+  &__inner-author {
+    padding: 40px 0 10px;
+    font-size: 28px;
+    line-height: 30px;
+    @extend %os-bold;
+  }
+  &__inner-author--up {
+    display: none;
+  }
+}
+
+.slider-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+  bottom: 130px;
+  svg {
+    stroke: #bec2c7;
+  }
+  &__left {
+    left: 0;
+  }
+}
+
+.price {
+  overflow: hidden;
+  background-image: url("../images/triangle-white.svg");
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: $grey;
+  text-align: center;
+  &__input {
+    display: none;
+  }
+  &__table {
+    margin: 150px 0 95px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  &__table-item-none {
+    background-color: transparent;
+    border: none;
+  }
+  &__table-item {
+    background-color: #ffffff;
+    width: 25%;
+    border: 2px solid #e5e5e5;
+    padding: 17px 0;
+  }
+  &__table-title {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    @extend %os-bold;
+  }
+  &__table-img {
+    width: 31px;
+    height: 30px;
+  }
+  &__table-text {
+    @extend %os-light;
+  }
+  &__table-mobile {
+    display: none;
+  }
+  &__table-name {
+    text-align: left;
+    padding: 17px 23px;
+    font-size: 18px;
+  }
+  &__table-item-none {
+    background-color: transparent;
+    border: none;
+  }
+  &__table-item-top {
+    position: relative;
+    padding: 20px 0;
+    background-color: #283645;
+    color: #ffffff;
+    border: none;
+    border-right: 2px solid #e5e5e5;
+  }
+  &__table-hit {
+    background: url("../images/flag_hit.png") no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+  }
+}
+
+.questions {
+  padding-top: 70px;
+
+  &__title {
+    font-size: 50px;
+    line-height: 60px;
+    @extend %os-light;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+  }
+  &__contacts {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  &__contacts-item {
+    width: 280px;
+    padding-right: 20px;
+  }
+  &__contacts-title {
+    @extend %os-bold;
+    padding-bottom: 25px;
+  }
+  &__contacts-text {
+    @extend %os-light;
+    text-align: center;
+    color: #d22856;
+    font-size: 24px;
+    outline: none;
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+    &:focus {
+      color: $blue;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $active;
+      text-decoration: none;
+    }
+  }
+}
+
+.map {
+  &__inner {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/bg-map-desktop.jpg");
+    @supports (
+      background: -webkit-image-set(url("../images/bg-map-desktop.webp") 1x)
+    ) {
+      background-image: url("../images/bg-map-desktop.webp");
+    }
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 0;
+    margin-top: 40px;
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url("../images/bg-map-desktop@2x.jpg");
+      @supports (
+        background: -webkit-image-set(url("../images/bg-map-desktop@2x.webp") 2x)
+      ) {
+        background-image: url("../images/bg-map-desktop@2x.webp");
+      }
+    }
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url("../images/bg-white-mask.svg");
+    background-repeat: no-repeat;
+    background-size: 170% 100px;
+    background-position: center top;
+    z-index: 4;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social-item {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    &:hover {
+      border-color: $blue;
+    }
+    &:active {
+      opacity: 0.2;
+    }
+  }
+  &__social-img {
+    padding: 7px 0 0 11px;
+    width: 37px;
+    height: 37px;
+  }
+  &__social-link {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    outline: none;
+    &:focus {
+      opacity: 0.2;
+    }
+  }
+  &__made {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__made-title {
+    margin-right: 13px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  &__made-link {
+    outline: none;
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+  &__made-img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    stroke: #d22856;
+    outline: none;
+    &:hover {
+      stroke: $blue;
+    }
+    &:active {
+      stroke: $active;
+    }
+  }
+}
+
+@import "media";
